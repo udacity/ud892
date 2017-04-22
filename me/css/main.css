@@ -15,29 +15,23 @@ h1 {
 div.main {
   max-width: 700px;
   margin: 0 auto; }
-
-div.main p {
-  padding: 1em;
-  color: #FFC2A1; }
-
-div.main aside {
-  background: rgba(0, 0, 0, 0.2);
-  float: right;
-  width: 33%;
-  margin: 0em 1em 1em 1em;
-  position: relative; }
-
-div.main aside h2 {
-  color: #FF8442;
-  padding-left: 0.66em;
-  font-family: 'Lobster', cursive; }
-
-div.main aside img {
-  position: absolute;
-  top: 0;
-  left: 60px;
-  width: 100px;
-  -webkit-transform: translate(0, -100%);
-  transform: translate(0, -100%);
-  -webkit-filter: invert(1);
-  filter: invert(1); }
+  div.main p {
+    padding: 1em;
+    color: #FFC2A1; }
+  div.main aside {
+    background: rgba(0, 0, 0, 0.2);
+    float: right;
+    width: 33%;
+    margin: 0em 1em 1em 1em;
+    position: relative; }
+    div.main aside h2 {
+      color: #FF8442;
+      padding-left: 0.66em;
+      font-family: 'Lobster', cursive; }
+    div.main aside img {
+      position: absolute;
+      top: 0;
+      left: 60px;
+      width: 100px;
+      transform: translate(0, -100%);
+      filter: invert(1); }

@@ -14,21 +14,27 @@ h1 {
 
 div.main {
   max-width: 700px;
-  margin: 0 auto; }
-  div.main p {
+  margin: 0 auto;
+
+  p {
     padding: 1em;
-    color: #FFC2A1; }
-  div.main aside {
+    color: #FFC2A1;
+  }
+
+  aside {
     background: rgba(0, 0, 0, 0.2);
     float: right;
     width: 33%;
     margin: 0em 1em 1em 1em;
-    position: relative; }
-    div.main aside h2 {
+    position: relative;
+
+    h2 {
       color: #FF8442;
       padding-left: 0.66em;
-      font-family: 'Lobster', cursive; }
-    div.main aside img {
+      font-family: 'Lobster', cursive;
+    }
+
+    img {
       position: absolute;
       top: 0;
       left: 60px;
@@ -36,4 +42,7 @@ div.main {
       -webkit-transform: translate(0, -100%);
               transform: translate(0, -100%);
       -webkit-filter: invert(1);
-              filter: invert(1); }
+              filter: invert(1);
+    }
+  }
+}
