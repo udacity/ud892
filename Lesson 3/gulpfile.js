@@ -3,15 +3,7 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 
-gulp.task("default", ["styles"], function() {
-  gulp.watch("sass/**/*.scss", ["styles"]);
-
-  browserSync.init({
-    server: "./"
-  });
-});
-
-gulp.task("styles", function() {
+gulp.task("styles", function(done) {
   gulp
     .src("sass/**/*.scss")
     .pipe(sass().on("error", sass.logError))
@@ -22,4 +14,13 @@ gulp.task("styles", function() {
     )
     .pipe(gulp.dest("./css"))
     .pipe(browserSync.stream());
-});
+done(); });
+
+gulp.task("default", gulp.series("styles", function(done) {
+  gulp.watch("sass/**/*.scss", gulp.series("styles"));
+
+  browserSync.init({
+    server: "./"
+  });
+
+done(); }));
