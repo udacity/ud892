@@ -1,6 +1,4 @@
 (function() {
-
-	var foo = 1;
-	return foo;
-
+  var foo = 12345;
+  return foo;
 })();
